@@ -1,0 +1,233 @@
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 10px;
+  
+}
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contenu {
+  width: 600px;
+  height: 300px;
+  background-color: whitesmoke;
+  border: solid 1px lightgray;
+  margin: auto;
+  text-align: center;
+}
+/* END */
+
+/* 0- TRANSITION */
+#transition {
+  width: 100px;
+  height: 50px;
+  background-color: peru;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 10px;
+  color: antiquewhite;
+  padding-top: 15px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+/* END */
+
+/* 1- CARRE */
+#carre {
+  width: 100px;
+  height: 100px;
+  background-color: peru;
+  margin: auto;
+  margin-top: 75px;
+}
+/* END */
+
+/* 2- BALLE */
+#balle {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: peru;
+  margin: auto;
+  margin-top: 168px;
+}
+
+#box {
+  width: 50px;
+  height: 215px;
+  border: solid 1px peru;
+  margin: auto;
+  margin-top: 30px;
+}
+/* END */
+
+/* 3- LOADER */
+#box2 {
+  width: 600px;
+  height: 266px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cercle1,
+#cercle2,
+#cercle3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: solid 1px peru;
+  margin-left: 10px;
+}
+/* END */
+
+/* 4- PLUSIEURS CARRES */
+#box3 {
+  position: relative;
+}
+
+#carre1,
+#carre2,
+#carre3,
+#carre4,
+#carre5,
+#carre6 {
+  width: 20px;
+  height: 20px;
+  background-color: peru;
+  border: solid 1px black;
+  color: antiquewhite;
+  font-weight: bolder;
+  position: absolute;
+  animation-name: transition;
+}
+
+#carre1 {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+#carre2 {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s
+}
+
+#carre3 {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s
+}
+
+#carre4 {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s
+}
+
+#carre5 {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s
+}
+
+#carre6 {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s
+}
+
+
+/* END
+
+/* 5- CAROUSEL */
+#global{
+  width: 600px;
+  height: 300px;
+  position: relative;
+}
+#carousel {
+  position: absolute;
+  transform-style: preserve-3d;
+  top: 20px;
+  left: 110px;
+  animation: carou 3s infinite linear;
+  color: white;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine {
+	height: 5px;
+	width: 5px;
+	padding: 20px;
+  position: absolute;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px 10px whitesmoke;
+}
+
+#one {
+    background-color: chocolate;
+    transform: rotateY(0deg) translateZ(75px);
+}
+
+#two {
+    background-color: peru;
+    transform: rotateY(40deg) translateZ(75px);
+}
+
+#three {
+    background-color: orange;
+    transform: rotateY(80deg) translateZ(75px) ;
+}
+
+#four {
+    background: chocolate;
+    transform: rotateY(120deg) translateZ(75px); 
+}
+
+#five {
+    background: peru;
+    transform: rotateY(160deg) translateZ(75px);
+}
+
+#six {
+    background: orange;
+    transform: rotateY(200deg) translateZ(75px); 
+}
+
+#seven {
+    background: chocolate;
+    transform: rotateY(240deg) translateZ(75px); 
+}
+
+#eight {
+    background: peru;
+    transform: rotateY(280deg) translateZ(75px);
+}
+
+#nine {
+    background: orange;
+    transform:  rotateY(320deg) translateZ(75px); 
+}
+
+
+/* END */
