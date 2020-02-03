@@ -40,7 +40,12 @@ hr {
   color: antiquewhite;
   padding-top: 15px;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 18px;;
+  transition: 1.5s;
+}
+
+#transition:hover {
+  height: 250px;
 }
 /* END */
 
