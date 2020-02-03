@@ -128,7 +128,7 @@ hr {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  border: solid 1px peru;
+  border: solid 1px chocolate;
   margin-left: 10px;
 }
 
@@ -155,7 +155,7 @@ hr {
 
 @keyframes load
 {
-  0% {background: chocolate;}
+  0% {background: orangered;}
   100% {background: orange;}
 }
 /* END */
@@ -178,7 +178,7 @@ hr {
   color: antiquewhite;
   font-weight: bolder;
   position: absolute;
-  animation-name: transition;
+  animation-name: boucle;
 }
 
 #carre1 {
@@ -214,6 +214,61 @@ hr {
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-delay: 5s
+}
+
+@keyframes boucle {
+  0% {
+    top: 5px;
+    left:10px;
+  }
+
+  10% {
+    top: 5px;
+    left:580px;
+    transform: rotate(360deg);
+  }
+
+  25% {
+    top: 230px;
+    left:580px;
+    transform: rotate(720deg);
+  }
+
+  35% {
+    top: 230px;
+    left:10px;
+    transform: rotate(1080deg);
+  }
+
+  50% {
+    top: 5px;
+    left:10px;
+    transform: rotate(1440deg);
+  }
+
+  60% {
+    top: 5px;
+    left:580px; 
+    transform: rotate(1800deg);
+  }
+
+  75% {
+    top: 230px;
+    left:580px;
+    transform: rotate(2160deg);
+  }
+
+  85% {
+    top: 230px;
+    left:10px;
+    transform: rotate(2520deg);
+  }
+
+  100% {
+    top: 5px;
+    left:10px;
+    transform: rotate(2880deg);
+  }
 }
 /* END
 
