@@ -78,21 +78,38 @@ hr {
 /* END */
 
 /* 2- BALLE */
-#balle {
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  background-color: peru;
-  margin: auto;
-  margin-top: 168px;
-}
-
 #box {
   width: 50px;
   height: 215px;
   border: solid 1px peru;
   margin: auto;
   margin-top: 30px;
+}
+
+#balle {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: peru;
+  margin: auto;
+  margin-top: 38px;
+  animation: balle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes balle
+{
+    0% {top : 0px;}
+    10% {transform: translateY(130px);}
+    20% {transform: translateY(30px);}
+    30% {transform: translateY(130px);}
+    40% {transform: translateY(60px);}
+    50% {transform: translateY(130px);}
+    60% {transform: translateY(90px);}
+    70% {transform: translateY(130px);}
+    80% {transform: translateY(110px);}
+    100% {transform: translateY(130px);}
 }
 /* END */
 
