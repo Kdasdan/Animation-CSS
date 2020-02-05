@@ -285,6 +285,7 @@ hr {
   left: 110px;
   animation: carou 3s infinite linear;
   color: antiquewhite;
+  
 }
 
 #one,
@@ -302,6 +303,7 @@ hr {
   position: absolute;
   border: 1px solid black;
   box-shadow: 0px 0px 10px 10px antiquewhite;
+  
 }
 
 #one {
@@ -349,6 +351,23 @@ hr {
     transform:  rotateY(320deg) translateZ(75px); 
 }
 
+
+#boxCarou {
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: carouAnim1 3s infinite linear;
+}
+
+@keyframes carouAnim1 {
+
+  0%{
+      transform: rotateY(0deg) ;
+  }
+  100%{
+      transform: rotateY(360deg) ;
+  }
+}
+
 @keyframes carou {
   0% {
     transform: rotateY(0deg) rotateX(0deg);
@@ -357,19 +376,16 @@ hr {
   }
 
   25% {
-    transform: rotateY(90deg) rotateX(90deg);
     top: 20px;
     left: 500px;
   }
 
   50% {
-    transform: rotateY(180deg) rotateX(180deg);
     top: 250px;
     left: 500px;
   }
 
   75% {
-    transform: rotateY(270deg) rotateX(270deg);
     top: 250px;
     left: 80px;
   }
